@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:background="@color/purple_700"
+    tools:context=".MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_700"
+        >
+
+    <EditText
+        android:id="@+id/et_buscar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:ems="10"
+        android:hint="@string/qual_o_cep"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:padding="10dp"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/button_buscar"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <Button
+        android:id="@+id/button_buscar"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:shadowColor="@android:color/darker_gray"
+        android:shadowDx="9"
+        android:shadowDy="9"
+        android:shadowRadius="90"
+        android:text="@string/buscar"
+        android:textColor="@color/white"
+        android:textColorHighlight="@color/purple_700"
+        android:textColorHint="@color/purple_700"
+        android:textColorLink="@color/purple_500"
+        app:backgroundTint="@color/purple_700"
+        app:layout_constraintBottom_toTopOf="@+id/textView_resultado_cep"
+        app:layout_constraintTop_toBottomOf="@+id/et_buscar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/textView_resultado_cep"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/resultado"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView_resultado_preco"
+        app:layout_constraintTop_toBottomOf="@+id/button_buscar"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp" />
+
+
+    <TextView
+        android:id="@+id/textView_resultado_preco"
+        android:layout_width="379dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:padding="10dp"
+        android:text="@string/resultado"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView_resultado_cep"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="16dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
